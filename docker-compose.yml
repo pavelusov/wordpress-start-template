@@ -10,7 +10,6 @@ services:
       - MYSQL_DATABASE=wordpress
     volumes:
       - dbdata:/var/lib/mysql
-      - "./db_dump:/home/db_dump:rw"
     command: '--default-authentication-plugin=mysql_native_password'
     networks:
       - app-network
