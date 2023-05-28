@@ -4,7 +4,9 @@
 Setup your private environments in your system terminal
 
 `export MYSQL_ROOT_PASSWORD=some_password`
+
 `export MYSQL_DB_USER=some_mysql_db_user`
+
 `export MYSQL_DB_PASSWORD=somemysqldbpassword`
 
 ## First start setup
@@ -61,9 +63,13 @@ volume will be named by mask
 for example, if our project is located in the "blog-wp" folder, then volume names will be as follows:
 
 `blog-wp_dbdata`
+
 `blog-wp_wordpress`
 
 3. Removing volumes
+
 `docker-compose down` - stop and remove containers
+
 `docker volume rm blog-wp_dbdata`
+
 `docker volume rm blog-wp_wordpress`
