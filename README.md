@@ -11,7 +11,8 @@ Setup your private environments in your system terminal
 1. Run services `docker-compose up -d`
 2. Go to the admin panel `http://127.0.0.1/wp-login.php`
 3. Setup Wordpess
-4. Create a db dump `docker exec db sh -c 'exec mysqldump wordpress -uroot -p"$MYSQL_ROOT_PASSWORD"' > ./db_dump/wordpress.sql`
+4. Create db_dump folder `mkdir db_dump`
+5. Create a db dump `docker exec db sh -c 'exec mysqldump wordpress -uroot -p"$MYSQL_ROOT_PASSWORD"' > ./db_dump/wordpress.sql`
 
 ## Start setup
 1. `docker-compose up -d db` - run the db service
